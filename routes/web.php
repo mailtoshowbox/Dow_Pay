@@ -89,6 +89,10 @@ Route::group(['middleware' => ['App\Http\Middleware\CheckMember']], function () 
         Route::get('/withdraw-fund', 'Wallet@withdraw_fund');
     endif;
 
- 
+
 }); 
 Route::get('/getuser/{id}', 'SiteController@getuser');
+
+Route::get('/register/{id?}/{leg?}/{epin?}', function () { return view('site.register', ['title' => 'Create a Member Account']); });
+
+ 

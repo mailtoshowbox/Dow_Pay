@@ -8,7 +8,7 @@
         
         <div class="row">
           <div class="col-6 text-left">
-            <h4 class="card-title">Welcome Letter</h4>
+            <h4 class="card-title">{{$subtitle}}</h4>
           </div>
           <div class="col-6 text-right">
             <button onclick="printDiv()" type="button" class="btn btn-sm btn-rose"
